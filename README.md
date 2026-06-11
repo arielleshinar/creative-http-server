@@ -26,6 +26,31 @@ Visiting `/` in the browser shows a live homepage that documents all available r
 | GET | `/time` | Returns the current time and date |
 | GET | `/index.html` | Serves a static HTML file |
 
+## Example usage
+
+### Route handler
+Visit in your browser:
+http://localhost:3000/hello/arielle
+
+Returns:
+```json
+{"message":"Hello, arielle!"}
+```
+
+### Static file serving
+Visit in your browser:
+http://localhost:3000/index.html
+
+Returns the HTML file stored in the `public/` folder.
+
+### Current time
+http://localhost:3000/time
+
+Returns:
+```json
+{"time":"6:00:00 PM","date":"6/11/2026","timestamp":"2026-06-11T16:00:00.000Z"}
+```
+
 ## How to run
 
 ```bash
